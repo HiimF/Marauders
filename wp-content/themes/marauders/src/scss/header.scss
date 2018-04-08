@@ -1,0 +1,31 @@
+#header {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 99;
+	padding-top: 40px;
+
+	a {
+		color: $white;
+	}
+
+	.menu {
+		display: flex;
+
+		li {
+			margin: 0 20px;
+			font-size: responsive(16, 24);
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				color: $white;
+			}
+		}
+	}
+}

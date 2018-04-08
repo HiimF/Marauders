@@ -1,0 +1,138 @@
+#post {
+	.cover {
+		height: 40vh;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 80px;
+
+		&:before {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			content: '';
+			background-color: rgba($black, 0.5);
+		}
+	}
+
+	h1 {
+		max-width: 90%;
+		margin: 0 auto;
+		font-size: responsive(20, 40);
+	}
+
+	.content {
+		width: 90%;
+		max-width: 1000px;
+		margin: 0 auto 80px;
+
+		.big-image {
+			margin-bottom: 40px;
+		}
+	}
+
+	.actor-author {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column-reverse;
+		margin: 0 auto 40px;
+		width: 90%;
+		flex-wrap: wrap;
+
+		@media(min-width: 1000px) {
+			flex-direction: row;
+		}
+
+		&:nth-child(even) {
+			@media(min-width: 1000px) {
+				flex-direction: row-reverse;
+			}
+		}
+
+		.text {
+			width: 100%;
+			margin: 0;
+			font-size: responsive(12, 16);
+
+			.social {
+				display: flex;
+				flex-wrap: wrap;
+				margin-top: 10px;
+
+				li {
+					margin-left: 20px;
+					font-family: 'Lumos';
+					&:first-of-type {
+						margin-left: 0;
+					}
+				}
+			}
+
+			&::first-letter {
+		    font-size: inherit;
+		    margin: inherit;
+		    float: inherit;
+		    line-height: inherit;
+		  }
+
+			span {
+				font-weight: inherit;
+				font-family: 'Lumos';
+				font-size: responsive(16, 20);
+			}
+
+			@media(min-width: 1000px) {
+				width: 80%;
+			}
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+
+			@media(min-width: 1000px) {
+				width: 20%;
+			}
+		}
+	}
+
+	.videoWrapper {
+		width: 90%;
+		margin: 0 auto 80px;
+	}
+
+	.carrossel-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		button {
+			font-size: responsive(30, 40);
+			margin-bottom: responsive(100, 60);
+		}
+
+		.post-carrossel {
+			display: flex;
+			justify-content: space-between;
+			width: 90%;
+			.text-post {
+				width: 30%;
+				text-align: left;
+				margin-bottom: 40px;
+
+				img {
+					display: block;
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
