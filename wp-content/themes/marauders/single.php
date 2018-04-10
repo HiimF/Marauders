@@ -20,7 +20,7 @@
       <img src='<?php echo get_field( 'post_image' ); ?>' class='big-image' />
     <?php endif; ?>
     <?php if ( get_field( 'writer_or_actor' ) ): ?>
-      <?php while ( have_rows( 'champions_main' ) ) : the_row(); ?>
+      <?php while ( have_rows( 'writer_or_actor' ) ) : the_row(); ?>
         <div class='actor-author'>
           <div class='text'>
             <span class='name'>
@@ -66,7 +66,7 @@
       </div>
       <button class='next'>></button>
     </div> -->
-    <a href='' class='more'>Ver mais</a>
+    <!-- <a href='' class='more'>Ver mais</a> -->
   </div>
 </section>
 

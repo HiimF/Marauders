@@ -38,6 +38,7 @@ ul {
   height: responsive(100, 200);
   margin: 0 auto 40px;
   display: block;
+  opacity: 0.6;
 }
 
 .section-title {
@@ -73,13 +74,21 @@ ul {
 }
 
 .text {
-  font-size: responsive(16, 22);
+  font-family: 'Adobe Garamond Pro';
+  font-size: responsive(12, 20);
+  line-height: responsive(22, 27);
   width: 90%;
   margin: 0 auto 80px;
 
+  p {
+    display: block;
+    text-align: left;
+    display: inline;
+  }
+
   &::first-letter {
-    font-size: responsive(65, 120);
-    margin: 0 5px;
+    font-size: responsive(55, 110);
+    margin: 20px 5px 5px;
     float: left;
     line-height: 30px;
   }

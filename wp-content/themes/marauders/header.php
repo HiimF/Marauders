@@ -15,13 +15,13 @@
 
 <header id="header">
 
-  <a class='marotos'>Os Marotos</a>
+  <a href='<?php echo site_url( 'home' ); ?>' class='marotos'>Os Marotos</a>
   <ul class='menu'>
-    <li><a href="">videos</a></li>
-    <li><a href="">sobre</a></li>
-    <li><a href="">textos</a></li>
-    <li><a href="">personagens</a></li>
-    <li><a href="">contato</a></li>
+    <!-- <li><a href="">wideos</a></li> -->
+    <li><a href="#about">sobre</a></li>
+    <li><a href="#penas-home">textos</a></li>
+    <li><a href="#characters-home">personagens</a></li>
+    <li><a href="#contact">contato</a></li>
   </ul>
 
 </header>
