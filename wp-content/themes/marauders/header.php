@@ -17,10 +17,10 @@
 
   <a href='<?php echo site_url( 'home' ); ?>' class='marotos'>Os Marotos</a>
   <ul class='menu'>
-    <!-- <li><a href="">wideos</a></li> -->
-    <li><a href="#about">sobre</a></li>
-    <li><a href="#penas-home">textos</a></li>
-    <li><a href="#characters-home">personagens</a></li>
+    <li><a href="<?php echo site_url( '2018/04/11/primeira-reuniao/' ); ?>">wideos</a></li>
+<!--     <li><a href="<?php echo site_url( 'home' ); ?>">sobre</a></li> -->
+    <li><a href="<?php echo site_url( 'penas-pergaminhos' ); ?>">textos</a></li>
+    <li><a href="<?php echo site_url( 'champions' ); ?>">personagens</a></li>
     <li><a href="#contact">contato</a></li>
   </ul>
 

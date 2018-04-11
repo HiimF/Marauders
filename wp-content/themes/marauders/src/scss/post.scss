@@ -88,13 +88,14 @@
 			}
 
 			@media(min-width: 1000px) {
-				width: 80%;
+				width: 70%;
 			}
 		}
 
 		img {
 			width: 100%;
 			height: auto;
+			max-width: responsive(120, 200, 1000, 1920);
 
 			@media(min-width: 1000px) {
 				width: 20%;

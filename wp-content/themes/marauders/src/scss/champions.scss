@@ -1,0 +1,73 @@
+#champions {
+	#cover {
+		height: 50vh;
+		width: 100%;
+		margin-bottom: 80px;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			content: '';
+			background-color: rgba($black, 0.5);
+		}
+
+		.title {
+			position: relative;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 50vh;
+			width: 100%;
+
+			h2 {
+				max-width: 800px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: responsive(32, 46);
+				text-align: center;
+				z-index: 10;
+				color: $white;
+				font-family: 'Lumos';
+				line-height: responsive(46, 58);
+				span {
+					display: block;
+					font-family: 'Adobe Garamond Pro';
+	  			font-size: responsive(12, 16);
+				}
+			}
+		}
+	}
+
+	#main {
+		width: 90%;
+		max-width: 1000px;
+		margin: 0 auto;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			flex-wrap: wrap;
+
+			a {
+				height: responsive(200, 400);
+				width: 30%;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	#contact {
+		width: 90%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+}

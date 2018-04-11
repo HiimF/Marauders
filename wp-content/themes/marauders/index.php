@@ -13,7 +13,7 @@
   <?php if ( $post_query->have_posts() ): ?>
   	<?php while ( $post_query->have_posts() ): $post_query->the_post(); ?>
 			<a href='<?php echo get_permalink(); ?>' class='title' style='background-image: url(<?php echo get_field( 'cover_image' ); ?>)'><h2><?php echo get_field( 'title' ); ?>
-				<span>ver</span>
+				<span>Ler</span>
 			</h2></a>
 		<?php endwhile; ?>
 	<?php wp_reset_postdata(); ?>
@@ -21,7 +21,7 @@
 </section>
 <section id='content'>
 	<div id='about'>
-		<img src='<?php echo IMG; ?>placeholder.png' class='section-image' />
+		<img src='<?php echo IMG; ?>founders.png' class='section-image' />
 		<div class='section-title'>
 			Sobre o Projeto
 		</div>
@@ -32,7 +32,6 @@
 	</div>
 	<?php if(get_field('founders')) : ?>
 		<div id='founders'>
-			<img src='<?php echo IMG; ?>founders.png' class='section-image' />
 			<div class='section-title'>
 				As Fundadoras
 			</div>
@@ -46,14 +45,14 @@
 			<?php endwhile;?>
 		</div>
 	<?php endif; ?>
-	<!-- <?php if( get_field( 'team' ) ) : ?>
+	<?php if( get_field( 'team' ) ) : ?>
 		<div id='team'>
 			<img src='<?php echo IMG; ?>team.png' class='section-image' />
 			<div class='section-title'>
 				O Time
 			</div>
 			<div class='container'>
-				<?php while ( have_rows( 'founders' ) ) : the_row(); ?>
+				<?php while ( have_rows( 'team' ) ) : the_row(); ?>
 					<div class='team-mate'>
 						<?php echo get_sub_field( 'person' ); ?>
 					</div>
@@ -61,7 +60,7 @@
 			</div>
 			<img src='<?php echo get_field( 'team_image' ) ?>' class='big-image' />
 		</div>
-	<?php endif; ?> -->
+	<?php endif; ?>
 	<div id='characters-home'>
 		<img src='<?php echo IMG; ?>champions.png' class='section-image' />
 		<div class='section-title'>
@@ -93,7 +92,7 @@
 				</div>
 			<?php endif; ?>
 		</div>
-	<!-- <a href='' class='more'>Ver mais</a>  -->
+	<a href='<?php echo site_url( 'champions' ); ?>' class='more'>Mais</a> 
 	</div>
 	<?php
     $args = array(
@@ -123,7 +122,7 @@
 				</div>
 				<button class='next'>></button>
 			</div>
-			<a href='' class='more'>Xer mais</a>
+			<a href='<?php echo site_url( 'penas-pergaminhos' ); ?>' class='more'>Mais</a>
 		</div>
 		<?php wp_reset_postdata(); ?>
 	<?php endif; ?>

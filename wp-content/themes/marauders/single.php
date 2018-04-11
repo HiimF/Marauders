@@ -45,7 +45,7 @@
     <?php endif; ?>
     <?php if( get_field( 'video' ) ): ?>
       <div class='videoWrapper'>
-        <iframe src="<?php echo get_field( 'video>'); ?>" allowfullscreen class='video'></iframe>
+        <iframe src="<?php echo get_field( 'video'); ?>" allowfullscreen class='video'></iframe>
       </div>
     <?php endif; ?>
     <!-- <div class='carrossel-container'>
