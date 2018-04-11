@@ -35,6 +35,6 @@
     "isotope-packery": "^2.0.0",
     "jquery": "^2.2.1",
     "siema": "^1.0.2",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.8.1"
   }
 }

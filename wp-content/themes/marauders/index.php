@@ -6,13 +6,15 @@
 	<?php
     $args = array(
       'post_type' => 'post',
-      'posts_per_page' => 1
+      'posts_per_page' => 5
     );
     $post_query = new WP_Query( $args );
   ?>
   <?php if ( $post_query->have_posts() ): ?>
   	<?php while ( $post_query->have_posts() ): $post_query->the_post(); ?>
-			<a href='<?php echo get_permalink(); ?>' class='title' style='background-image: url(<?php echo get_field( 'cover_image' ); ?>)'><h2><?php echo get_field( 'title' ); ?></h2></a>
+			<a href='<?php echo get_permalink(); ?>' class='title' style='background-image: url(<?php echo get_field( 'cover_image' ); ?>)'><h2><?php echo get_field( 'title' ); ?>
+				<span>ver</span>
+			</h2></a>
 		<?php endwhile; ?>
 	<?php wp_reset_postdata(); ?>
 	<?php endif; ?>
@@ -89,10 +91,10 @@
 					</div>
 					<button class='after'>></button>
 				</div>
-			</div>
-		<?php endif; ?>
-	<!-- 	<a href='' class='more'>Ver mais</a>
-	</div> -->
+			<?php endif; ?>
+		</div>
+	<!-- <a href='' class='more'>Ver mais</a>  -->
+	</div>
 	<?php
     $args = array(
       'post_type' => 'post',
